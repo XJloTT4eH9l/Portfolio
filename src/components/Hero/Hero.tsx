@@ -1,4 +1,5 @@
 import TypewriterEffect from '../TypewritingEffect/TypewritingEffect';
+import Contacts from '../Conctacts/Contacts';
 import './Hero.css';
 
 const Hero = () => {
@@ -15,6 +16,7 @@ const Hero = () => {
                     <p className='hero__text'>
                     A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
                     </p>
+                    <Contacts />
                     <a className='hero__link' href='#projects'>View Projects</a>
                 </div>
             </section>

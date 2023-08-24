@@ -1,0 +1,26 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.contacts__item {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color .2s linear;
+}
+.contacts__item--dark:hover {
+    background-color: var(--black-color) !important;
+}
+.contacts__item:hover {
+    background-color: var(--white-color);
+}
+.contacts__img {
+    width: 30px;
+    height: 30px;
+}

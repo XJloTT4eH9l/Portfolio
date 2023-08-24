@@ -34,3 +34,11 @@
 .active {
     color: var(--black-color);
 }
+@media screen and (max-width: 600px) {
+    .nav__item {
+        margin-right: 20px;
+    }
+    /* .nav {
+        display: none;
+    } */
+}
