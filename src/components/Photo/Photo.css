@@ -1,0 +1,33 @@
+.photo {
+  position: relative;
+}
+.photo__decoration {
+  position: absolute;
+  top: -21px;
+  width: 100px;
+  height: 100px;
+  z-index: 1;
+}
+.photo__decoration--left {
+  left: -33px;
+}
+.photo__decoration--right {
+  right: -33px;
+}
+.photo__img {
+  position: relative;
+  z-index: 2;
+  width: 350px;
+  height: 455px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 600px) {
+  .photo__img {
+    width: 270px;
+    height: 350px;
+  }
+  .photo__decoration {
+    width: 80px;
+    height: 80px;
+  }
+}

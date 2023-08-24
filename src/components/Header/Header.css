@@ -1,0 +1,36 @@
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 30px 0;
+    background-color: var(--white-color);
+    z-index: 10;
+}
+.header__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+}
+.nav__item {
+    margin-right: 30px;
+}
+.nav__item:last-child {
+    margin-right: 0;
+}
+.nav__link {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--grey-color);
+    transition: color .2s linear;
+}
+.nav__link:hover {
+    color: var(--black-color);
+}
+.active {
+    color: var(--black-color);
+}

@@ -3,18 +3,22 @@
 *::after {
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 ul,
 ol {
   padding: 0;
   list-style: none;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
+img {
+  display: block;
+  width: 100%;
+}
 body,
 h1,
 h2,
@@ -31,21 +35,23 @@ dl,
 dd {
   margin: 0;
 }
-
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black-color);
+  overflow-x: hidden;
 }
-
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-
 @media (prefers-reduced-motion: reduce) {
   * {
     animation-duration: 0.01ms !important;
@@ -53,4 +59,42 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+:root {
+  --black-color: #000C24;
+  --white-color: #FBFBFB;
+  --red-color: #F44336;
+  --grey-color: #928A97;
+}
+.container {
+  max-width: 1130px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.d-flex-s-bet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  font-size: 25px;
+  color: var(--red-color);
+}
+.text {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--red-color);
+	border-radius: 2px;
+}
+::-webkit-scrollbar-track {
+	background-color: rgba(0, 0, 0, .7);
+}
+::-webkit-scrollbar-corner {
+	background-color: rgba(0, 0, 0, .7);	
 }
