@@ -14,7 +14,7 @@ export const portfolio = [
         tools: ['React','Redux','Typescript','SCSS','Rest API', 'React hook form', 'i18next'],
         links: {
             github: null,
-            deploy: 'https://xjlott4eh9l.github.io/Eva/'
+            deploy: 'https://eva-plum.vercel.app/'
         }
     },
     {
