@@ -28,7 +28,9 @@ const Projects:FC<ProjectsProps> = ({ projectsList }) => {
                                 </ul>
                                 <div className="projects__links">
                                     <a target='_blank' href={project.links.deploy} className='projects__link projects__link--red'>Visit site</a>
-                                    <a target='_blank' href={project.links.github} className='projects__link projects__link--empty'>Github</a>
+                                    {project.links.github && (
+                                        <a target='_blank' href={project.links.github} className='projects__link projects__link--empty'>Github</a>
+                                    )}
                                 </div>
                             </div>
                         </li>

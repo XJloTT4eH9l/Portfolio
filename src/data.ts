@@ -13,7 +13,7 @@ export const portfolio = [
         description: 'Eva is a modern and user-friendly web application designed to revolutionize the way people order fresh juices online',
         tools: ['React','Redux','Typescript','SCSS','Rest API', 'React hook form', 'i18next'],
         links: {
-            github: 'https://github.com/XJloTT4eH9l/Eva',
+            github: null,
             deploy: 'https://xjlott4eh9l.github.io/Eva/'
         }
     },
@@ -68,7 +68,7 @@ export const portfolio = [
         description: 'Website for calling a freezer repair master',
         tools: ['HTML','SCSS','Javasript','gulp'],
         links: {
-            github: 'https://github.com/XJloTT4eH9l/freezer-repair',
+            github: null,
             deploy: 'http://rem-hol.com/refrigerator-repair/'
         }
     }

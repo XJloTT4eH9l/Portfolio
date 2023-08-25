@@ -5,7 +5,7 @@ export interface PortfolioItem {
     description: string;
     tools: string[];
     links: {
-        github: string;
+        github: string | null;
         deploy: string;
     };
 }
