@@ -1,6 +1,13 @@
 .skills {
     position: relative;
     padding: 50px 0;
+    transform: translateX(50px);
+    opacity: 0;
+    transition: opacity 0.3s linear, transform 0.3s ease-in;
+}
+.skills--active {
+    transform: translateX(0);
+    opacity: 1;
 }
 .skills__container {
     display: flex;

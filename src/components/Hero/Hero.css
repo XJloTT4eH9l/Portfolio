@@ -34,8 +34,10 @@
     cursor: pointer;
     transition: all .2s ease-in;
 }
-.hero__link:hover {
-    transform: scale(1.05);
+@media screen and (min-width: 900px) {
+    .hero__link:hover {
+        transform: scale(1.05);
+    }
 }
 @media screen and (max-width:600px) {
     .hero__title {

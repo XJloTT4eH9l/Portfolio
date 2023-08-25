@@ -1,9 +1,12 @@
+import { FC } from 'react'
+import { useInView } from 'react-intersection-observer'
 import Photo from '../Photo/Photo'
 import skillsImg from '../../assets/skills.jpg'
 import decoration from '../../assets/side-decoration-right.png'
 import './Skills.css'
 
-const Skills = () => {
+const Skills:FC = () => {
+    const [ref, inView] = useInView({threshold: 0.5, triggerOnce: true});
     const skills = [
         {id: 1, title: 'HTML'},
         {id: 2, title: 'CSS'},
@@ -20,7 +23,7 @@ const Skills = () => {
         {id: 13, title: 'SEO'},
     ]
     return (
-       <section className="skills" id='skills'>
+       <section className={inView ? "skills skills--active" : "skills"} id='skills' ref={ref}>
         <img className='skills__decoration' src={decoration} alt='decoration'/>
             <div className="container skills__container">
                 <div className="skills__content">

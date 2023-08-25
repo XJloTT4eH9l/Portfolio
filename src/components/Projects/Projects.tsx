@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import { useInView } from 'react-intersection-observer'
 import { PortfolioItem } from '../../models'
 import './Projects.css';
 
@@ -8,9 +9,10 @@ interface ProjectsProps {
 }
 
 const Projects:FC<ProjectsProps> = ({ projectsList }) => {
+    const [ref, inView] = useInView({threshold: 0.1, triggerOnce: true});
     return (
-        <section className="projects" id="projects">
-            <div className="container">
+        <section className="projects" id="projects" ref={ref}>
+            <div ref={ref} className={inView ? "container projects__container projects__container--active" : 'container projects__container'}>
                 <h2 className="title projects__title">Projects</h2>
                 <ul className='projects__list'>
                     {projectsList.map(project => (

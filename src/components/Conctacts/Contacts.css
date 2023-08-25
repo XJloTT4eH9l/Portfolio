@@ -14,11 +14,13 @@
     justify-content: center;
     transition: background-color .2s linear;
 }
-.contacts__item--dark:hover {
-    background-color: var(--black-color) !important;
-}
-.contacts__item:hover {
-    background-color: var(--white-color);
+@media screen and (min-width: 900px) {
+    .contacts__item--dark:hover {
+        background-color: var(--black-color) !important;
+    }
+    .contacts__item:hover {
+        background-color: var(--white-color);
+    }
 }
 .contacts__img {
     width: 30px;
